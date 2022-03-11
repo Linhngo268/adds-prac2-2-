@@ -6,7 +6,7 @@
 //
 
 #include "main.hpp"
-#include "_human.cpp"
+#include "Human.cpp"
 #include"Computer.cpp"
 #include "Referee.cpp"
 
