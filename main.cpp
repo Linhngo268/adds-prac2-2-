@@ -1,12 +1,14 @@
-#include "Human.cpp"
-#include"Computer.cpp"
-#include "Referee.cpp"
+#include "main.hpp"
+#include "Human.h"
+#include"Computer.h"
+#include "Referee.h"
 
 using namespace std;
 int main(){
     Human player;
     player.makeMove();
     player.getMove();
+    
     
     Computer comp;
     comp.makeMove();
@@ -17,4 +19,3 @@ int main(){
     refee.refGame(player,comp);
     return 0;
 }
-
