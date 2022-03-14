@@ -6,8 +6,10 @@
 class Computer{
 
     public:
-    computer();
+    Computer();
+    char makeMove();
     char getMove();
+    
     private:
     char move_comp;
 
