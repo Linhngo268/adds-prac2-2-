@@ -1,24 +1,27 @@
-//
-//  Referee.cpp
-//  
-//
-//  Created by Ngo Linh on 11/3/22.
-//
-
-#include <stdio.h>
 #include "Referee.h"
- 
+#include <iostream>
+#include <string>
 using namespace std;
- 
-Referee::Referee();
 
-char Referee::refGame(Human player1, Computer player2){
-    if(player1='R'){
-        return 'T';}
-    if(player1='P'){
-        return 'W';}
-    else{
-        return 'L';}
-    }
-    
+ 
+Referee::Referee(){}
+
+ char Referee::refGame(Human player1, Computer player2){
+     
+      
+     char HumanMove=player1.getMove();
+     char CompMove=player2.getMove();
+     
+     if(HumanMove=='P'&& CompMove=='R' ){
+         return 'W';
+         
+     }
+     if(HumanMove=='R'&&CompMove=='R'){
+         return 'T';
+     }
+     if(HumanMove=='S'&&CompMove=='R'){
+         return 'L';
+     }
+     else{return 'X';}
+     
 }
