@@ -13,10 +13,10 @@ void Human::makeMove(){
     char move;
     cout<<"enter the move"<<endl;
     cout<<"choose one of the options"<<endl;
-    getline(cin,move);
+    cin>>move;
     while (move_human!='R'&& move_human!='P'&&move_human!='S'){
         cout<<"please enter only one option"<<endl;
-        getline(cin,move);
+        cin>>move;
     }
     move_human=move;
 }
