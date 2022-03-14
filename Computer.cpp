@@ -8,15 +8,15 @@ Computer::Computer(){
     
 }
 
-char Computer::makeMove(){
+void Computer::makeMove(){
     char com_move='R';
     move_comp=com_move;
     cout<<move_comp<<endl;
-    return move_comp;
+     
     
 }
 char Computer::getMove(){
-    cout<<move_comp<<endl;
+     
     return move_comp;
     
 }
