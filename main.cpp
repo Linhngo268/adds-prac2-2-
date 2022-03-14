@@ -1,11 +1,3 @@
-//
-//  main.cpp
-//  
-//
-//  Created by Ngo Linh on 11/3/22.
-//
-
-#include "main.hpp"
 #include "Human.cpp"
 #include"Computer.cpp"
 #include "Referee.cpp"
@@ -17,8 +9,12 @@ int main(){
     player.getMove();
     
     Computer comp;
+    comp.makeMove();
     comp.getMove();
     
-    Referee refGame(player,comp);
+    
+    Referee refee;
+    refee.refGame(player,comp);
     return 0;
 }
+
